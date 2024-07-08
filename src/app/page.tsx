@@ -12,6 +12,7 @@ export default function Home() {
     <div>
       <Hero/>
       {/* <About/> */}
+      <About/>
       <Courses/>
       <Contact/>
       <OurTeam/>
