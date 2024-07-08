@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faFacebook, faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 const Contact: React.FC = () => {
   const [name, setName] = useState('');
@@ -16,62 +18,76 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center "style={{ backgroundImage: "url(/bg.png)"}}>
-      <div className=" p-8 rounded shadow-md w-full max-w-md">
-        <h1 className="text-2xl font-bold mb-4 text-[#7F5B05]">Contact Us</h1>
-        <h2 className="text-[#946F13]">if you need some help or any
-        other questions, feel free to ask.</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-             
-            </label>
+    <div className="my-6" id="contact" style={{ backgroundImage: "url(/bg.png)" }}>
+      <div className="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-5xl rounded-md text-[#333] font-[sans-serif] bg-gradient-to-br from-[#b68e42] via-[#ffffff37] to-transparent bg-opacity-5">
+        <div className="flex flex-col justify-center">
+          <h1 className="text-3xl text-[#7F5B05] font-extrabold text-center sm:text-left">CONTACT US</h1>
+          <h2 className="text-[#946F13]">if you need some help or any
+          other questions, feel free to ask.</h2>
+          <form onSubmit={handleSubmit} className="space-y-4  rounded-md p-6">
             <input
-              type="text"
-              id="name"
+              type='text'
               name="name"
               placeholder='Enter your name...'
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 bg-white text-black"
+              className="w-full rounded-md py-2.5 px-4 bg-white border text-sm outline-[#007bff]"
               required
             />
-          </div>
-          <div>
-            <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700">
-            </label>
             <input
-              type="tel"
-              id="phoneNumber"
-              name="phoneNumber"
+              type='tel'
+              name='phoneNumber'
               placeholder='Enter your phone number...'
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 bg-white text-black"
+              className="w-full rounded-md py-2.5 px-4 bg-white border text-sm outline-[#007bff]"
               required
             />
-          </div>
-          <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-            </label>
             <textarea
-              id="message"
-              name="message"
               placeholder='Type your message here...'
+              rows="6"
+              name='message'
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 bg-white text-black"
-              rows={4}
+              className="w-full rounded-md px-4 border bg-white text-sm pt-2.5 outline-[#007bff]"
               required
             />
+            <button
+              type='submit'
+              className="text-white bg-[#878F23] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-2.5 w-full sm:w-auto max-w-[190px] mx-auto"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+
+        <div>
+          <h1 className="text-3xl text-[#7F5B05] font-extrabold">COME VISIT US</h1>
+          <p className="text-sm text-[#946F13] font-extrabold mt-3">
+            Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project and provide help.
+          </p>
+          <div className="mt-12">
+            <h2 className="text-lg text-[#7F5B05] font-extrabold">COME VISIT US</h2>
+            <p className="text-sm text-[#946F13]  font-extrabold mt-3">
+              10700 Academy Rd NE, Albuquerque, New York, UNITED STATES (505) 299-5051
+            </p>
+            <p className="text-sm text-[#946F13]  font-extrabold mt-3">
+              1481 Front, Windsor Ontario, CANADA (519) 734-6500
+            </p>
+            <h2 className="text-lg text-[#7F5B05] font-extrabold mt-12">FOLLOW OUR SOCIALS</h2>
+            <div className="flex items-center mt-3">
+              <a href="#" className="text-[#946F13] hover:text-[#878F23] mx-2">
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
+              </a>
+              <a href="#" className="text-[#946F13] hover:text-[#878F23] mx-2">
+                <FontAwesomeIcon icon={faFacebook} size="2x" />
+              </a>
+              <a href="#" className="text-[#946F13] hover:text-[#878F23] mx-2">
+                <FontAwesomeIcon icon={faDiscord} size="2x" />
+              </a>
+            </div>
           </div>
-          <button
-            type="submit"
-            className="w-190px text-white font-medium p-2 rounded-md hover:bg-[#E7F53C] bg-[#878F23]"
-          >
-            Submit
-          </button>
-        </form>
+        </div>
       </div>
     </div>
   );
