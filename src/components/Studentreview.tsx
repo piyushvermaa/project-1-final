@@ -86,7 +86,8 @@ const Studentreview = () => {
     <div className=" overflow-hidden" style={{ backgroundImage: "url(/bg.png)" }}>
       {/* <HeroHighlight> */}
         <div id="title">
-        <LetterPullup words={"Hear from Our Students!"} delay={0.05}  />
+        <LetterPullup words={"Hear from Our Students!"} delay={0.05} className="text-[#612B00]" />
+
         </div>
         <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-background py-20 md:shadow-xl">
           <Marquee pauseOnHover className="[--duration:20s]">
