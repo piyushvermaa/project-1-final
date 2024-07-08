@@ -1,5 +1,6 @@
 import React from 'react'
 import Team from './TeamCard'
+import LetterPullup from './magicui/letter-pullup'
 
 const OurTeam = () => {
   return (
@@ -9,9 +10,10 @@ const OurTeam = () => {
         alt=""
         src="/data-transfer.svg"
       />
-      <div className="text-[3.313rem] text-center font-lobster-two text-base-50  w-full">
-        Our Team
-      </div>
+      <div id="title">
+        <LetterPullup words={"Our Team"} delay={0.05} className="text-[#612B00]" />
+
+        </div>
       <Team/>
     </div>
   )

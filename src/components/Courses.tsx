@@ -1,14 +1,16 @@
 import React from 'react';
+import LetterPullup from './magicui/letter-pullup';
  // Ensure this file includes the @import for the font
 
 const Courses = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="w-full relative h-full bg-cover bg-[top] text-left text-[1.25rem] text-gray1-300 font-pacifico justify-center items-center" style={{ backgroundImage: "url(/bg.png)" }}>
-        <div className="absolute top-[2rem] text-center text-[#612B00] text-[3.313rem] text-base-50 inline-block w-full h-[6.75rem] font-pacifico">
-          Our courses
+      <div id="title">
+        <LetterPullup words={"Courses"} delay={0.05} className="text-[#612B00]" />
+
         </div>
-        <div className="flex flex-wrap justify-center mt-[12rem] pb-12 gap-8 px-4">
+        <div className="flex flex-wrap justify-center mt-10 pb-12 gap-8 px-4">
           <div className="relative w-[19.125rem]">
             <img className="w-full h-[34.25rem] object-contain" alt="" src="/vector-31.svg" />
             <div className="absolute top-[20rem] left-[2rem] text-black text-center inline-block w-[12.688rem] h-[3.125rem]" />

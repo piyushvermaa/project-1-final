@@ -3,6 +3,7 @@ import React from 'react'
 import Image from "next/image";
 import { StickyScroll } from './ui/sticky-scroll-reveal';
 import BlurIn from './magicui/blue-text';
+import LetterPullup from './magicui/letter-pullup';
 
 
 
@@ -59,7 +60,10 @@ const content = [
 const About = () => {
   return (
     <div className='flex flex-col justify-center items-center text-center p-10' style={{ backgroundImage: "url(/bg.png)" }}>
-      <h1 className='text-[3rem] text-black'>About Us</h1>
+      <div id="title">
+        <LetterPullup words={"About Us"} delay={0.05} className="text-[#612B00]" />
+
+        </div>
       <div className='max-w-[1080px] text-[#612B00] mt-10'>
       <BlurIn
       word="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, aperiam possimus?  Numquam delectus dolorem quos sunt ex porro perferendis autem odit nobis voluptatum inventore, minus quaerat fuga dolore! Ab assumenda neque recusandae fuga odio totam voluptatem velit rerum sed sit voluptatibus illum molestiae iste suscipit placeat, vero laudantium, quia quaerat perspiciatis praesentium aperiam natus. Culpa assumenda quidem labore."

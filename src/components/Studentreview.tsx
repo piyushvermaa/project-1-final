@@ -62,9 +62,9 @@ const ReviewCard = ({
       className={cn(
         "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4 border-black",
         // light styles
-        "border-black/[.5] bg-[#ecff5b] hover:bg-gray-950/[.05] ",
+        "border-black/[.5] bg-gradient-to-r from-[#826040b5] to-[#433324b5] hover:bg-gray-950/[.05] ",
         // dark styles
-        "dark:border-black/[.5] dark:bg-blue-500/[.50] dark:hover:bg-blue-700/[.50]"
+        "dark:border-black/[.5] dark:bg-gradient-to-r dark:from-[#826040b5] dark:to-[#3f3329e0] dark:hover:bg-[#5f4a36db]"
       )}
     >
       <div className="flex flex-row items-center gap-2">

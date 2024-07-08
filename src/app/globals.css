@@ -89,8 +89,8 @@ body {
 }
 
 #title{
-    font-family: cursive;
-    font-size: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 2rem;
     color: #C88F03;
 }
 
