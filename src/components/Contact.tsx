@@ -18,11 +18,11 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="my-6" id="contact" style={{ backgroundImage: "url(/bg.png)" }}>
-      <div className="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-5xl rounded-md text-[#333] font-[sans-serif] bg-gradient-to-br from-[#b68e42] via-[#ffffff37] to-transparent bg-opacity-5">
+    <div className="p-10" id="contact" style={{ backgroundImage: "url(/bg.png)" }}>
+      <div className="grid sm:grid-cols-2 items-center text-center gap-16 p-8 mx-auto max-w-5xl rounded-lg text-[#333] font-[sans-serif] bg-gradient-to-br from-[#b68e42] via-[#ffffff37] to-transparent bg-opacity-100 shadow-lg border border-black">
         <div className="flex flex-col justify-center">
-          <h1 className="text-3xl text-[#7F5B05] font-extrabold text-center sm:text-left">CONTACT US</h1>
-          <h2 className="text-[#946F13]">if you need some help or any
+          <h1 className="text-[3rem] text-[#7F5B05] font-extrabold text-center sm:text-left">CONTACT US</h1>
+          <h2 className="text-[#946F13] text-left max-w-[400px] ml-5">if you need some help or any
           other questions, feel free to ask.</h2>
           <form onSubmit={handleSubmit} className="space-y-4  rounded-md p-6">
             <input
@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
             />
             <button
               type='submit'
-              className="text-white bg-[#878F23] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-2.5 w-full sm:w-auto max-w-[190px] mx-auto"
+              className="text-white bg-[#8f6d23] hover:bg-black font-semibold rounded-md text-sm px-4 py-2.5 w-full sm:w-auto max-w-[190px] mx-auto shadow-lg"
             >
               Submit
             </button>
@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
               1481 Front, Windsor Ontario, CANADA (519) 734-6500
             </p>
             <h2 className="text-lg text-[#7F5B05] font-extrabold mt-12">FOLLOW OUR SOCIALS</h2>
-            <div className="flex items-center mt-3">
+            <div className="flex items-center justify-center mt-3">
               <a href="#" className="text-[#946F13] hover:text-[#878F23] mx-2">
                 <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>

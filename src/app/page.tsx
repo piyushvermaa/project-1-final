@@ -14,9 +14,9 @@ export default function Home() {
       {/* <About/> */}
       <About/>
       <Courses/>
-      <Contact/>
       <OurTeam/>
       <Studentreview/>
+      <Contact/>
       <Footer/>
 
     </div>
