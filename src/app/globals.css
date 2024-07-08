@@ -14,6 +14,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Product+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.font-pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.font-lobster-two {
+  font-family: 'Lobster Two', cursive;
+}
+
 :root {
   --color-white-100: hsl(206, 5%, 100%);
   --color-white-200: hsl(206, 5%, 90%);

@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+ // Ensure this file includes the @import for the font
 
 const Courses = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="w-full relative h-full  bg-cover bg-[top] text-left text-[1.25rem] text-gray1-300 font-lobster-two justify-center items-center" style={{ backgroundImage: "url(/bg.png)" }}>
-        <div className="absolute top-[2rem] text-center text-[3.313rem] text-base-50 inline-block w-full h-[6.75rem]">
+      <div className="w-full relative h-full bg-cover bg-[top] text-left text-[1.25rem] text-gray1-300 font-pacifico justify-center items-center" style={{ backgroundImage: "url(/bg.png)" }}>
+        <div className="absolute top-[2rem] text-center text-[#612B00] text-[3.313rem] text-base-50 inline-block w-full h-[6.75rem] font-pacifico">
           Our courses
         </div>
         <div className="flex flex-wrap justify-center mt-[12rem] pb-12 gap-8 px-4">
@@ -70,7 +71,7 @@ const Courses = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Courses
+export default Courses;
