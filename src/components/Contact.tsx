@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
             />
             <textarea
               placeholder='Type your message here...'
-              rows="6"
+              rows={6}
               name='message'
               value={message}
               onChange={(e) => setMessage(e.target.value)}
