@@ -15,12 +15,12 @@ const Hero = () => {
           
           <div className="banner-inner">
             <h1 className="heading-xl text-[#612B00] font-mono">Transform Your Passion Into Performance: Explore <br></br> <FlipWords words={words}/>  Music <br/>With Salman Usmani</h1>
-            <p className="paragraph text-black">
+            <div className="paragraph text-black">
             <WordPullUp
       className="text-xl font-bold tracking-[-0.02em] text-black dark:text-white md:text-xl "
       words="Book Your Free Demo Today!"
     />
-            </p>
+            </div>
             <button className="px-5 py-3 rounded-full bg-[#5c4c23] text-white shadow-lg">
               Join Now
             <i className="bx bx-right-arrow-alt"></i>

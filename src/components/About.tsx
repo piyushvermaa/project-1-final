@@ -1,208 +1,78 @@
-"use client";
-import React from "react";
-import GradualSpacing from "./magicui/gradual-spacing";
-import { HeroHighlight } from "./ui/hero-highlight";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
+"use client"
+import React from 'react'
+import Image from "next/image";
+import { StickyScroll } from './ui/sticky-scroll-reveal';
+import BlurIn from './magicui/blue-text';
+
+
+
+const content = [
+  {
+    title: "Who is Salman Usmani?",
+    description:
+      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        Collaborative Editing
+      </div>
+    ),
+  },
+  {
+    title: "Achievements",
+    description:
+      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+    content: (
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <Image
+          src="/linear.webp"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Performance",
+    description:
+      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+        Version control
+      </div>
+    ),
+  },
+  {
+    title: "Experience",
+    description:
+      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        Running out of content
+      </div>
+    ),
+  },
+];
+
 
 const About = () => {
-  const words = `Salman Usmani, a maestro in Hindustani classical vocals, has captivated audiences worldwide with his soulful renditions. With years of rigorous training and a passion for teaching, Salman brings unparalleled expertise and a unique perspective to his students.`;
   return (
-    <>
-    <div className=" mt-[-15rem]">
-      <HeroHighlight>
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-          <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <div></div>
-            <div>
-              <GradualSpacing
-                className=" font-sans text-center  text-3xl font-bold tracking-[-0.1em]  text-black dark:text-yellow md:text-7xl md:leading-[5rem] text-red"
-                text="Who is Salman Usmani?"
-              />
-            </div>
-            <p className="text-base mt-10 text-gray-300 md:text-lg">
-            Salman Usmani, a maestro in Hindustani classical vocals, has captivated audiences worldwide with his soulful renditions. With years of rigorous training and a passion for teaching, Salman brings unparalleled expertise and a unique perspective to his students.
-        </p>
-          </div>
-          <div className="grid max-w-screen-lg mx-auto space-y-6 lg:grid-cols-2 lg:space-y-0 lg:divide-x">
-            <div className="space-y-6 sm:px-16">
-              <div className="flex flex-col max-w-md sm:flex-row">
-                <div className="mb-4 mr-4">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-                    <svg
-                      className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div>
-                  <h6 className="mb-3 text-[#bfd830] text-xl font-bold leading-5">
-                    The deep ocean
-                  </h6>
-                  <p className="text-sm text-white">
-                    Webtwo ipsum orkut reddit meebo skype vimeo jajah spock
-                    empressr zimbra, mobly napster.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col max-w-md sm:flex-row">
-                <div className="mb-4 mr-4">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-                    <svg
-                      className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div>
-                  <h6 className="mb-3 text-xl text-[#bfd830] font-bold leading-5">
-                    When has justice
-                  </h6>
-                  <p className="text-sm text-white">
-                    Lookout flogging bilge rat main sheet bilge water nipper
-                    fluke to go on account heave down clap of thunder.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col max-w-md sm:flex-row">
-                <div className="mb-4 mr-4">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-                    <svg
-                      className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div>
-                  <h6 className="mb-3 text-xl text-[#bfd830] font-bold leading-5">
-                    Leverage agile
-                  </h6>
-                  <p className="text-sm text-white">
-                    The first mate and his Skipper too will do their very best
-                    to make the others comfortable.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="space-y-6 sm:px-16">
-              <div className="flex flex-col max-w-md sm:flex-row">
-                <div className="mb-4 mr-4">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-                    <svg
-                      className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div>
-                  <h6 className="mb-3 text-xl text-[#bfd830] font-bold leading-5">
-                    Organically grow
-                  </h6>
-                  <p className="text-sm text-white">
-                    Skate ipsum dolor sit amet, alley oop vert mute-air Colby
-                    Carter flail 180 berm over the sea.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col max-w-md sm:flex-row">
-                <div className="mb-4 mr-4">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-                    <svg
-                      className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div>
-                  <h6 className="mb-3 text-xl text-[#bfd830] font-bold leading-5">
-                    Have a good one
-                  </h6>
-                  <p className="text-sm text-white">
-                    Cheese on toast airedale the big cheese. Danish fontina
-                    cheesy grin airedale danish fontina.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col max-w-md sm:flex-row">
-                <div className="mb-4 mr-4">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-                    <svg
-                      className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div>
-                  <h6 className="mb-3 text-xl text-[#bfd830] font-bold leading-5">
-                    A slice of heaven
-                  </h6>
-                  <p className="text-sm text-white">
-                    A flower in my garden, a mystery in my panties. Heart attack
-                    never stopped old Big Bear.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </HeroHighlight>
-    </div>
-    </>
-    
-  );
-};
+    <div className='flex flex-col justify-center items-center text-center p-10' style={{ backgroundImage: "url(/bg.png)" }}>
+      <h1 className='text-[3rem] text-black'>About Us</h1>
+      <div className='max-w-[1080px] text-[#612B00] mt-10'>
+      <BlurIn
+      word="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, aperiam possimus?  Numquam delectus dolorem quos sunt ex porro perferendis autem odit nobis voluptatum inventore, minus quaerat fuga dolore! Ab assumenda neque recusandae fuga odio totam voluptatem velit rerum sed sit voluptatibus illum molestiae iste suscipit placeat, vero laudantium, quia quaerat perspiciatis praesentium aperiam natus. Culpa assumenda quidem labore."
+      className=" text-[#612B00]"
+    />
 
-export default About;
+      </div>
+      <div className='mt-10'>
+
+      <StickyScroll content={content} />
+      </div>
+    </div>
+  )
+}
+
+export default About
