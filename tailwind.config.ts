@@ -23,7 +23,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      colors: {
+        brown: {
+          900: '#654321',
+          800: '#7D4E25',
+          700: '#8D5A30',
+          600: '#A16E41',
+          500: '#B38152',
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
